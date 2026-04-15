@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import java.util.Arrays
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         teams[0] = "Mamelodi Sundowns FC <3"
 
         // set the text view's text to the string representation of teams
+        teamsTextView.text = Arrays.toString(teams)
         
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
