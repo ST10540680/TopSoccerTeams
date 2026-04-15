@@ -28,11 +28,11 @@ class MainActivity : AppCompatActivity() {
 
         //add all the teams to the display string
         var teamsDisplay = ""
-        teamsDisplay += "${teams[0]}\n"
-        teamsDisplay += "${teams[1]}\n"
-        teamsDisplay += "${teams[2]}\n"
-        teamsDisplay += "${teams[3]}\n"
-        teamsDisplay += "${teams[4]}\n"
+        var counter = 0
+        while (counter <5) {
+            teamsDisplay += "${teams[counter]}\n"
+            counter++
+        }
 
         // set the text view's text to the first team
         teamsTextView.text = teams[0]
