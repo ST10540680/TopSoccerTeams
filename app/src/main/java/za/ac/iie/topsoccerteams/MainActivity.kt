@@ -9,8 +9,8 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
-    //Teams from https://footballdatabase.com/ranking/south-africa/1
-    //retrieved on 21 May 2022
+    // Teams from https://footballdatabase.com/ranking/south-africa/1
+    // retrieved on 21 May 2022
     val teams = arrayOf<String>("Mamelodi Sundowns FC",
         "Bidvest Wits",
         "Orlando Pirates",
@@ -22,8 +22,9 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        //get the teams text view
+        // get the teams text view
         val teamsTextView = findViewById<TextView>(R.id.teamsTextView)
+        // set the text view's text to the first team
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
