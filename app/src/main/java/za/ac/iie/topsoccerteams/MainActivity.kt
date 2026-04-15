@@ -34,6 +34,8 @@ class MainActivity : AppCompatActivity() {
 
         // set the text view's text to the string representation of teams
         teamsTextView.text = Arrays.toString(teams)
+
+        // get the teams text view
         
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
