@@ -24,8 +24,11 @@ class MainActivity : AppCompatActivity() {
 
         // get the teams text view
         val teamsTextView = findViewById<TextView>(R.id.teamsTextView)
+
         // set the text view's text to the first team
         teamsTextView.text = teams[0]
+
+        // Change the value of element 0
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
