@@ -10,8 +10,8 @@ class MainActivity : AppCompatActivity() {
 
     //Teams from https://footballdatabase.com/ranking/south-africa/1
     //retrieved on 21 May 2022
-    val teams = arrayOf<String>("mamelodi sundowns FC",
-        "Bidvest wits",
+    val teams = arrayOf<String>("Mamelodi Sundowns FC",
+        "Bidvest Wits",
         "Orlando Pirates",
         "kaizer Chiefs",
         "Cape Town City FC")
@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+        //get the teams text view
+        
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
