@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wp9290835_nike_football_boots_wallpapers"
     tools:context=".MainActivity">
 
     <TextView
@@ -17,5 +18,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.45" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Constraintlayout"
+        android:layout_width="409dp"
+        android:layout_height="318dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="185dp"
+            tools:layout_editor_absoluteY="196dp" />
+
+        <TextView
+            android:id="@+id/teamsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top South Africa Teams"
+            android:textColor="#E70404"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="51dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://wallpapercave.com/w/wp9290835"
+            android:textColor="#F44336"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="106dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
