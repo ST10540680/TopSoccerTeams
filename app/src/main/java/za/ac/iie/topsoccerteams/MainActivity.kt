@@ -30,6 +30,8 @@ class MainActivity : AppCompatActivity() {
 
         // Change the value of element 0
         teams[0] = "Mamelodi Sundowns FC <3"
+
+        // set the text view's text to the string representation of teams
         
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
