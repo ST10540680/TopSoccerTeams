@@ -29,6 +29,8 @@ class MainActivity : AppCompatActivity() {
         teamsTextView.text = teams[0]
 
         // Change the value of element 0
+        teams[0] = "Mamelodi Sundowns FC <3"
+        
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
