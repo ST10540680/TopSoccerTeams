@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wp9290835_nike_football_boots_wallpapers"
+    android:background="@drawable/_71994_1440x2560_samsung_hd_football_background_image__1_"
     tools:context=".MainActivity">
 
     <TextView
@@ -38,21 +38,23 @@
             android:id="@+id/teamsTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="serif"
             android:text="Top South Africa Teams"
-            android:textColor="#E70404"
+            android:textAlignment="center"
+            android:textColor="#100000"
             android:textSize="34sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="51dp" />
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="45dp" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="https://wallpapercave.com/w/wp9290835"
-            android:textColor="#F44336"
+            android:text="https://footballdatabase.com/ranking/south-africa/1"
+            android:textColor="#0D0100"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteX="36dp"
             tools:layout_editor_absoluteY="106dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

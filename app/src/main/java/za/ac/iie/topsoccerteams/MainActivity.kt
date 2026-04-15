@@ -26,6 +26,9 @@ class MainActivity : AppCompatActivity() {
         // get the teams text view
         val teamsTextView = findViewById<TextView>(R.id.teamsTextView)
 
+        //add all the teams to the display string
+        val teamsDisplay = ""
+
         // set the text view's text to the first team
         teamsTextView.text = teams[0]
 
@@ -35,8 +38,7 @@ class MainActivity : AppCompatActivity() {
         // set the text view's text to the string representation of teams
         teamsTextView.text = Arrays.toString(teams)
 
-        // get the teams text view
-        
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
