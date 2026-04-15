@@ -27,7 +27,12 @@ class MainActivity : AppCompatActivity() {
         val teamsTextView = findViewById<TextView>(R.id.teamsTextView)
 
         //add all the teams to the display string
-        val teamsDisplay = ""
+        var teamsDisplay = ""
+        teamsDisplay += "${teams[0]}\n"
+        teamsDisplay += "${teams[1]}\n"
+        teamsDisplay += "${teams[2]}\n"
+        teamsDisplay += "${teams[3]}\n"
+        teamsDisplay += "${teams[4]}\n"
 
         // set the text view's text to the first team
         teamsTextView.text = teams[0]
