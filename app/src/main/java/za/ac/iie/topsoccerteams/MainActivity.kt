@@ -36,6 +36,9 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        // call the method to find the longest name in the array
+        
+
         // call the method to log array values
         logArrayValues(teams)
         logArrayValues(teams, 2)
