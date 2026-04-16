@@ -1,6 +1,7 @@
 package za.ac.iie.topsoccerteams
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -12,6 +13,7 @@ import kotlin.math.log
 
 //logs the content of an array of strings
 fun logArrayValues(arr: Array<String>, limit: Int = 0){
+    // if statement to check if there is limit - if there is a limit. cut the array at that index
     if (limit ==0){
         Log.v("Array values", Arrays.toString(arr))
     }else{
