@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         // call the method to log array values
         logArrayValues(teams)
+        logArrayValues(teams, 2)
 
         // get the teams text view
         val teamsTextView = findViewById<TextView>(R.id.teamsTextView)
