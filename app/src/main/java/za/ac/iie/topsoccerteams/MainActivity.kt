@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // call the method to find the longest name in the array
+        var longestName = getLongestString(teams)
         
 
         // call the method to log array values
