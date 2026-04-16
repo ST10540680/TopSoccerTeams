@@ -34,6 +34,9 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        // call the method to log array values
+        
+
         // get the teams text view
         val teamsTextView = findViewById<TextView>(R.id.teamsTextView)
 
