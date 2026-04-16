@@ -7,6 +7,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import java.util.Arrays
+import kotlin.math.log
+
+//logs the content of an array of strings
+fun logArrayValues(arr: Array<String>){
+    log.v("Array values", Arrays.ToString(arr))
+}
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,8 +48,6 @@ class MainActivity : AppCompatActivity() {
 
         // set the text view's text to the string representation of teams
         teamsTextView.text = Arrays.toString(teams)
-
-
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
