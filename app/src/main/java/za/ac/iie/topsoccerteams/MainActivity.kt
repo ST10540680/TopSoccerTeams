@@ -6,12 +6,17 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.viewpager2.widget.ViewPager2
 import java.util.Arrays
 import kotlin.math.log
 
 //logs the content of an array of strings
-fun logArrayValues(arr: Array<String>){
-    log.v("Array values", Arrays.ToString(arr))
+fun logArrayValues(arr: Array<String>, limit: Int = 0){
+    if (limit ==0){
+        Log.v("Array values", Arrays.toString(arr))
+    }else{
+        Log.v("Array Values", Arr)
+    }
 }
 
 class MainActivity : AppCompatActivity() {
