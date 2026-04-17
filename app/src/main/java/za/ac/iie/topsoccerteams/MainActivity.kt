@@ -25,11 +25,13 @@ class MainActivity : AppCompatActivity() {
 
     // Teams from https://footballdatabase.com/ranking/south-africa/1
     // retrieved on 21 May 2022
-    val teams = arrayOf<String>("Mamelodi Sundowns FC",
+    val teams = arrayOf<String>(
+        "Mamelodi Sundowns FC",
         "Bidvest Wits",
         "Orlando Pirates",
         "kaizer Chiefs",
-        "Cape Town City FC")
+        "Cape Town City FC",
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -81,13 +83,10 @@ class MainActivity : AppCompatActivity() {
             return shortestElement
 
         }
-
         // set the shortest team function
         val shortestTeam = getShortestTeam(teams)
         teamsDisplay += "\nShortest name: $shortestTeam"
         teamsTextView.text = teamsDisplay
-
-
 
         // set the text view's text to the first team
         teamsTextView.text = teams[0]
