@@ -68,8 +68,9 @@ class MainActivity : AppCompatActivity() {
             counter++
         }
 
-        // set the shortest team function
-        val shortestTeam = getShortestTeam(teams)
+        //look for the shortest entry in the string array
+
+        
 
         // set the text view's text to the first team
         teamsTextView.text = teams[0]
