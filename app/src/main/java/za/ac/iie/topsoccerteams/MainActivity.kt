@@ -68,6 +68,9 @@ class MainActivity : AppCompatActivity() {
             counter++
         }
 
+        // set the shortest team function
+        
+
         // set the text view's text to the first team
         teamsTextView.text = teams[0]
 
