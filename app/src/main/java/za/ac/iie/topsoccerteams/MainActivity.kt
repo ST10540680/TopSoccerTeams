@@ -7,17 +7,14 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.viewpager2.widget.ViewPager2
-import java.util.Arrays
-import kotlin.math.log
 
 //logs the content of an array of strings
 fun logArrayValues(arr: Array<String>, limit: Int = 0){
     // if statement to check if there is limit - if there is a limit. cut the array at that index
-    if (limit ==0){
-        Log.v("Array values", Arrays.toString(arr))
+    if (limit == 0){
+        Log.v("Array values", arr.contentToString())
     }else{
-        Log.v("Array Values", Arrays.toString(arr.sliceArray(0..limit - 1)))
+        Log.v("Array Values", arr.sliceArray(0..limit).contentToString())
     }
 }
 // looks for longest entry in a string array
@@ -25,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     // Teams from https://footballdatabase.com/ranking/south-africa/1
     // retrieved on 21 May 2022
-    val teams = arrayOf<String>(
+    val teams = arrayOf(
         "Mamelodi Sundowns FC",
         "Bidvest Wits",
         "Orlando Pirates",
@@ -43,8 +40,8 @@ class MainActivity : AppCompatActivity() {
             var longestLength = 0
             var longestElement = ""
             for (element in arr) {
-                if (element.count() > longestLength) {
-                    longestLength =element.count()
+                if (element.length > longestLength) {
+                    longestLength = element.length
                     longestElement = element
                 }
             }
@@ -65,23 +62,21 @@ class MainActivity : AppCompatActivity() {
         //add all the teams to the display string
         var teamsDisplay = ""
         var counter = 0
-        while (counter <5) {
+        while (counter < 5) {
             teamsDisplay += "${teams[counter]}\n"
             counter++
         }
 
         //look for the shortest entry in the string array
         fun getShortestTeam(arr: Array<String>) : String {
-            var shortestLength = 0
-            var shortestElement = ""
+            if (arr.isEmpty()) return ""
+            var shortestElement = arr[0]
             for (element in arr) {
-                if (element.length <shortestLength) {
-                    shortestLength = element.length
+                if (element.length < shortestElement.length) {
                     shortestElement = element
                 }
             }
             return shortestElement
-
         }
         // set the shortest team function
         val shortestTeam = getShortestTeam(teams)
@@ -95,7 +90,7 @@ class MainActivity : AppCompatActivity() {
         teams[0] = "Mamelodi Sundowns FC <3"
 
         // set the text view's text to the string representation of teams
-        teamsTextView.text = Arrays.toString(teams)
+        teamsTextView.text = teams.contentToString()
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
