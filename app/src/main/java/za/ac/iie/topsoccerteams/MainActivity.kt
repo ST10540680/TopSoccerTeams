@@ -69,8 +69,25 @@ class MainActivity : AppCompatActivity() {
         }
 
         //look for the shortest entry in the string array
+        fun getShortestTeam(arr: Array<String>) : String {
+            var shortestLength = 0
+            var shortestElement = ""
+            for (element in arr) {
+                if (element.length <shortestLength) {
+                    shortestLength = element.length
+                    shortestElement = element
+                }
+            }
+            return shortestElement
 
-        
+        }
+
+        // set the shortest team function
+        val shortestTeam = getShortestTeam(teams)
+        teamsDisplay += "\nShortest name: $shortestTeam"
+        teamsTextView.text = teamsDisplay
+
+
 
         // set the text view's text to the first team
         teamsTextView.text = teams[0]
