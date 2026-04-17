@@ -37,7 +37,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //looks for the longest entry in a string array
-        
+        fun getLongestString(arr: Array<String>) : String{
+            var longestLength = 0
+            var longestElement = ""
+            for (element in arr) {
+                if (element.count() > longestLength) {
+                    longestLength =element.count()
+                    longestElement = element
+                }
+            }
+            return longestElement
+        }
 
         // call the method to find the longest name in the array
         val longestName = getLongestString(teams)
