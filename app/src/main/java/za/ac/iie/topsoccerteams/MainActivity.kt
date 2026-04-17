@@ -20,7 +20,7 @@ fun logArrayValues(arr: Array<String>, limit: Int = 0){
         Log.v("Array Values", Arrays.toString(arr.sliceArray(0..limit - 1)))
     }
 }
-// looks for longest entry
+// looks for longest entry in a string array
 class MainActivity : AppCompatActivity() {
 
     // Teams from https://footballdatabase.com/ranking/south-africa/1
@@ -36,9 +36,12 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        //looks for the longest entry in a string array
+        
+
         // call the method to find the longest name in the array
-        var longestName = getLongestString(teams)
-        log.v("Longest name", longestName)
+        val longestName = getLongestString(teams)
+        Log.v("Longest name", longestName)
 
         // call the method to log array values
         logArrayValues(teams)
